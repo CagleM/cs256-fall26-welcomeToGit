@@ -24,6 +24,7 @@ By the end of this exercise, you will be able to:
    - Type **`Git: Clone`** and press **Enter**.
    - Select **Clone from GitHub**, then pick **your fork** (`YOUR-USERNAME/repository-name`).
    - If you don't already have a GitHub account, you'll need to create one.
+   - If you aren't working on a machine where git is installed you will need to download it from git-scm.com
    - Choose a local folder to save your work, then click **Open** when prompted in VS Code.
 
 ---

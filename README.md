@@ -1,14 +1,13 @@
 # CS 256: Data Structures & Loops In-Class Exercise
 
-Welcome to the CS 256 in-class coding exercise! In this activity, you will practice working with Python data structures and loops while building comfort with the Git/GitHub workflow in Visual Studio Code.
+Welcome to the CS 256 in-class GitHub exercise! In this activity, you will practice working with Python data structures and loops while building comfort with the Git/GitHub workflow in Visual Studio Code.
 
 ---
 
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will be able to:
-- Clone a GitHub repository using VS Code's Command Palette.
-- Work with Python iteration, string manipulation, and dictionary access.
+- Fork and Clone a GitHub repository.
 - Perform the standard Git cycle (**Edit $\rightarrow$ Save $\rightarrow$ Commit**) for individual tasks.
 - Push multiple local commits to your GitHub fork and verify your work online.
 
@@ -24,6 +23,7 @@ By the end of this exercise, you will be able to:
    - Open the Command Palette: `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac).
    - Type **`Git: Clone`** and press **Enter**.
    - Select **Clone from GitHub**, then pick **your fork** (`YOUR-USERNAME/repository-name`).
+   - If you don't already have a GitHub account, you'll need to create one.
    - Choose a local folder to save your work, then click **Open** when prompted in VS Code.
 
 ---
@@ -39,14 +39,14 @@ Open `loops_exercise.py` in VS Code and complete the following tasks sequentiall
 - **Goal:** Modify `num_vowels()` so it counts **both uppercase and lowercase** vowels.
 - *Hint:* Use `.lower()` on characters or the input string before checking for vowels.
 - **💾 Commit Step:** Go to Source Control (`Ctrl+Shift+G` / `Cmd+Shift+G`). Message: `"Task 1: Fix vowel case sensitivity"`. Click **Commit**.
+- Note: If you haven't done this before you will be prompted to set you Github username and email. 
 
 ---
 
 ### 🔹 Task 2: Count Non-Vowels
 - **Goal:** Look for the comment inside `test_count_vowels()` (`# what if we wanted to count non_vowels?`).
-- Write a new function `num_consonants(input_text)` that counts alphabetic characters that are **not** vowels (exclude spaces, numbers, and punctuation).
-- Call `num_consonants()` inside `test_count_vowels()` to test it on `"Hello! My name is Maggie V."`.
-- *Hint:* Use `character.isalpha()` to check if a character is a letter.
+- Write a new function `count_non_vowels(input_text)` that counts all characters that are **not** vowels (including spaces, numbers, and punctuation).
+- Call `count_non_vowels` inside `test_count_vowels()` to test it on `"Hello! My name is Maggie V."`.
 - **💾 Commit Step:** In Source Control, message: `"Task 2: Add num_consonants function"`. Click **Commit**.
 
 ---
@@ -54,7 +54,7 @@ Open `loops_exercise.py` in VS Code and complete the following tasks sequentiall
 ### 🔹 Task 3: Access Dictionary Values Using Key Lookup
 - **Issue:** By default, running a standard `for item in dictionary:` loop only yields key names.
 - **Goal:** Modify the dictionary section in `test_loop_through_it()` so it prints each key along with its associated value (e.g., `discussion: 10`).
-- **Requirement:** You **must** retrieve values using key lookup syntax: **`dictionary[key]`** (do not use `.items()`).
+- **Hint:** You can retrieve values using key lookup syntax: **`dictionary[key]`**.
 - **💾 Commit Step:** In Source Control, message: `"Task 3: Access dictionary values using key lookup"`. Click **Commit**.
 
 ---

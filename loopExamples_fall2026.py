@@ -6,8 +6,12 @@
 
 def loop_through_it(data_structure):
     ''' prints each item in structure that was passed in. None is returned.'''
-    for item in data_structure:
-        print(item, end="\t")
+    if type(data_structure) is dict: # Learned that type() and "is" is possible from Gemini. type() determines the type of input recieved, "is" just means ==.
+        for item in data_structure:
+            print(f"{item}:{data_structure[item]}", end="\t")
+    else:    
+        for item in data_structure:
+            print(item, end="\t")
 
 def num_vowels(input_text):
     ''' count and return the number of vowels in the input text'''
@@ -50,7 +54,10 @@ def test_loop_through_it():
     print("\nSet... ")
     loop_through_it({2,10,3,20})    # set (order is not guarenteed)
     print("\nDictionary... ")
-    loop_through_it({'discussion':10, 'attendance':5, 'zybook':30}) #dictionary
+    studentGradeDictionary = {'discussion':10, 'attendance':5, 'zybook':30}
+    loop_through_it(studentGradeDictionary) #dictionary
+
+
 
 def test_count_vowels():
     ''' This function doesn't take any input or return any values. It tests the count_vowels function with two 
